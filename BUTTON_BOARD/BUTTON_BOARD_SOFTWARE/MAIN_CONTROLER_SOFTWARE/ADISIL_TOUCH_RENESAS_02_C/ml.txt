@@ -1,0 +1,5 @@
+200G-->1150ml-->3 cycles-->390/cycle
+500G-->2300ml-->3 cycles-->775/cycle
+
+200G-->1000ml-->3 cycles-->336/cycle
+400G-->2000ml-->3 cycles-->670/cycle

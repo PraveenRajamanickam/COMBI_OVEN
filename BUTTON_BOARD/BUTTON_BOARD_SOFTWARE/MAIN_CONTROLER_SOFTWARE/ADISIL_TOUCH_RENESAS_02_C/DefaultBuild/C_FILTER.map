@@ -1,0 +1,812 @@
+
+
+
+78K0R Linker W1.80                            Date:12 Jun 2025 Page:   1
+
+Command:   -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\
+           RL78\Devicefile -_msgoff -oDefaultBuild\C_FILTER.lmf -gi00000
+           000000000000000h -go84h,0FE00h,512 -gb0EFF3E9H -mi0 -s -pDefa
+           ultBuild\C_FILTER.map C:\Program Files (x86)\Renesas Electron
+           ics\CS+\CACX\CA78K0R\V1.72\lib78k0r\s0rll.rel DefaultBuild\r_
+           main.rel DefaultBuild\r_systeminit.rel DefaultBuild\r_cg_cgc.
+           rel DefaultBuild\r_cg_cgc_user.rel DefaultBuild\r_cg_port.rel
+            DefaultBuild\r_cg_port_user.rel DefaultBuild\r_cg_intc.rel D
+           efaultBuild\r_cg_intc_user.rel DefaultBuild\r_cg_serial.rel D
+           efaultBuild\r_cg_serial_user.rel DefaultBuild\r_cg_adc.rel De
+           faultBuild\r_cg_adc_user.rel DefaultBuild\r_cg_timer.rel Defa
+           ultBuild\r_cg_timer_user.rel DefaultBuild\INIT_MACHINE.rel De
+           faultBuild\PUMP_PWM.rel DefaultBuild\MAX6675.rel DefaultBuild
+           \KEY_SERVICE.rel DefaultBuild\BREWING.rel DefaultBuild\EEPROM
+           .rel DefaultBuild\INIT_SETTINGS.rel DefaultBuild\WATER_LEVEL.
+           rel DefaultBuild\HEATER.rel DefaultBuild\I2C.rel -bcl0ram.lib
+            -bcl0rm.lib -bcl0rmf.lib -iC:\Program Files (x86)\Renesas El
+           ectronics\CS+\CACX\CA78K0R\V1.72\lib78k0r
+Para-file:
+Out-file:  DefaultBuild\C_FILTER.lmf
+Map-file:  DefaultBuild\C_FILTER.map
+Direc-file:
+Directive:
+
+
+*** Link information ***
+
+    57 output segment(s)
+ 2252H byte(s) real data
+  1792 symbol(s) defined
+
+
+*** Memory map ***
+
+
+  SPACE=REGULAR
+
+  MEMORY=ROM
+  BASE ADDRESS=00000H   SIZE=10000H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@VECT00                     00000H    00002H  CSEG AT
+                  @@VECT00 @cstart    00000H    00002H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  @cstart    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_main     00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_systeminit
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_port
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_port_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_intc
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_intc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_serial
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_serial_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_adc   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_adc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_timer
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_timer_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  INIT_MACHINE
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  PUMP_PWM   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  MAX6675    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  KEY_SERVICE
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  BREWING    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  EEPROM     00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  INIT_SETTINGS
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  WATER_LEVEL
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  HEATER     00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  I2C        00002H    00000H
+         @@R_INIT                     00002H    00000H  CSEG UNIT64KP
+                  @@R_INIT @cstart    00002H    00000H
+                  @@R_INIT r_main     00002H    00000H
+                  @@R_INIT r_systeminit
+                                      00002H    00000H
+                  @@R_INIT r_cg_cgc   00002H    00000H
+                  @@R_INIT r_cg_cgc_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_port
+                                      00002H    00000H
+                  @@R_INIT r_cg_port_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_intc
+                                      00002H    00000H
+                  @@R_INIT r_cg_intc_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_serial
+                                      00002H    00000H
+                  @@R_INIT r_cg_serial_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_adc   00002H    00000H
+                  @@R_INIT r_cg_adc_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_timer
+                                      00002H    00000H
+                  @@R_INIT r_cg_timer_user
+                                      00002H    00000H
+                  @@R_INIT INIT_MACHINE
+                                      00002H    00000H
+                  @@R_INIT PUMP_PWM   00002H    00000H
+                  @@R_INIT MAX6675    00002H    00000H
+                  @@R_INIT KEY_SERVICE
+                                      00002H    00000H
+                  @@R_INIT BREWING    00002H    00000H
+                  @@R_INIT EEPROM     00002H    00000H
+                  @@R_INIT INIT_SETTINGS
+                                      00002H    00000H
+                  @@R_INIT WATER_LEVEL
+                                      00002H    00000H
+                  @@R_INIT HEATER     00002H    00000H
+                  @@R_INIT I2C        00002H    00000H
+                  @@R_INIT @rom       00002H    00000H
+         @@RLINIT                     00002H    00000H  CSEG UNIT64KP
+                  @@RLINIT @cstart    00002H    00000H
+                  @@RLINIT r_main     00002H    00000H
+                  @@RLINIT r_systeminit
+                                      00002H    00000H
+                  @@RLINIT r_cg_cgc   00002H    00000H
+                  @@RLINIT r_cg_cgc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_port
+                                      00002H    00000H
+                  @@RLINIT r_cg_port_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_intc
+                                      00002H    00000H
+                  @@RLINIT r_cg_intc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_serial
+                                      00002H    00000H
+                  @@RLINIT r_cg_serial_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_adc   00002H    00000H
+                  @@RLINIT r_cg_adc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_timer
+                                      00002H    00000H
+                  @@RLINIT r_cg_timer_user
+                                      00002H    00000H
+                  @@RLINIT INIT_MACHINE
+                                      00002H    00000H
+                  @@RLINIT PUMP_PWM   00002H    00000H
+                  @@RLINIT MAX6675    00002H    00000H
+                  @@RLINIT KEY_SERVICE
+                                      00002H    00000H
+                  @@RLINIT BREWING    00002H    00000H
+                  @@RLINIT EEPROM     00002H    00000H
+                  @@RLINIT INIT_SETTINGS
+                                      00002H    00000H
+                  @@RLINIT WATER_LEVEL
+                                      00002H    00000H
+                  @@RLINIT HEATER     00002H    00000H
+                  @@RLINIT I2C        00002H    00000H
+                  @@RLINIT @rom       00002H    00000H
+         @@R_INIS                     00002H    00000H  CSEG UNIT64KP
+                  @@R_INIS @cstart    00002H    00000H
+                  @@R_INIS r_main     00002H    00000H
+                  @@R_INIS r_systeminit
+                                      00002H    00000H
+                  @@R_INIS r_cg_cgc   00002H    00000H
+                  @@R_INIS r_cg_cgc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_port
+                                      00002H    00000H
+                  @@R_INIS r_cg_port_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_intc
+                                      00002H    00000H
+                  @@R_INIS r_cg_intc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_serial
+                                      00002H    00000H
+                  @@R_INIS r_cg_serial_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_adc   00002H    00000H
+                  @@R_INIS r_cg_adc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_timer
+                                      00002H    00000H
+                  @@R_INIS r_cg_timer_user
+                                      00002H    00000H
+                  @@R_INIS INIT_MACHINE
+                                      00002H    00000H
+                  @@R_INIS PUMP_PWM   00002H    00000H
+                  @@R_INIS MAX6675    00002H    00000H
+                  @@R_INIS KEY_SERVICE
+                                      00002H    00000H
+                  @@R_INIS BREWING    00002H    00000H
+                  @@R_INIS EEPROM     00002H    00000H
+                  @@R_INIS INIT_SETTINGS
+                                      00002H    00000H
+                  @@R_INIS WATER_LEVEL
+                                      00002H    00000H
+                  @@R_INIS HEATER     00002H    00000H
+                  @@R_INIS I2C        00002H    00000H
+                  @@R_INIS @rom       00002H    00000H
+         @@CALT                       00002H    00000H  CSEG
+                  @@CALT   @cstart    00002H    00000H
+                  @@CALT   r_main     00002H    00000H
+                  @@CALT   r_systeminit
+                                      00002H    00000H
+                  @@CALT   r_cg_cgc   00002H    00000H
+                  @@CALT   r_cg_cgc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_port
+                                      00002H    00000H
+                  @@CALT   r_cg_port_user
+                                      00002H    00000H
+                  @@CALT   r_cg_intc
+                                      00002H    00000H
+                  @@CALT   r_cg_intc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_serial
+                                      00002H    00000H
+                  @@CALT   r_cg_serial_user
+                                      00002H    00000H
+                  @@CALT   r_cg_adc   00002H    00000H
+                  @@CALT   r_cg_adc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_timer
+                                      00002H    00000H
+                  @@CALT   r_cg_timer_user
+                                      00002H    00000H
+                  @@CALT   INIT_MACHINE
+                                      00002H    00000H
+                  @@CALT   PUMP_PWM   00002H    00000H
+                  @@CALT   MAX6675    00002H    00000H
+                  @@CALT   KEY_SERVICE
+                                      00002H    00000H
+                  @@CALT   BREWING    00002H    00000H
+                  @@CALT   EEPROM     00002H    00000H
+                  @@CALT   INIT_SETTINGS
+                                      00002H    00000H
+                  @@CALT   WATER_LEVEL
+                                      00002H    00000H
+                  @@CALT   HEATER     00002H    00000H
+                  @@CALT   I2C        00002H    00000H
+         ??NMIROM                     00002H    00002H  CSEG
+* gap *                               00004H    00004H
+         @@VECT08                     00008H    00002H  CSEG AT
+                  @@VECT08 r_cg_intc_user
+                                      00008H    00002H
+* gap *                               0000AH    00006H
+         @@VECT10                     00010H    00002H  CSEG AT
+                  @@VECT10 r_cg_intc_user
+                                      00010H    00002H
+* gap *                               00012H    00012H
+         @@VECT24                     00024H    00002H  CSEG AT
+                  @@VECT24 r_cg_serial_user
+                                      00024H    00002H
+* gap *                               00026H    00006H
+         @@VECT2C                     0002CH    00002H  CSEG AT
+                  @@VECT2C r_cg_timer_user
+                                      0002CH    00002H
+* gap *                               0002EH    00006H
+         @@VECT34                     00034H    00002H  CSEG AT
+                  @@VECT34 r_cg_adc_user
+                                      00034H    00002H
+         @@CNSTL                      00036H    0001EH  CSEG PAGE64KP
+                  @@CNSTL  m_flogx    00036H    0001EH
+* gap *                               00054H    0006CH
+         ?CSEGOB0                     000C0H    00004H  CSEG OPT_BYTE
+         @@CODE                       000C4H    00000H  CSEG BASE
+                  @@CODE   r_main     000C4H    00000H
+                  @@CODE   r_systeminit
+                                      000C4H    00000H
+                  @@CODE   r_cg_cgc   000C4H    00000H
+                  @@CODE   r_cg_cgc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_port
+                                      000C4H    00000H
+                  @@CODE   r_cg_port_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_intc
+                                      000C4H    00000H
+                  @@CODE   r_cg_intc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_serial
+                                      000C4H    00000H
+                  @@CODE   r_cg_serial_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_adc   000C4H    00000H
+                  @@CODE   r_cg_adc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_timer
+                                      000C4H    00000H
+                  @@CODE   r_cg_timer_user
+                                      000C4H    00000H
+                  @@CODE   INIT_MACHINE
+                                      000C4H    00000H
+                  @@CODE   PUMP_PWM   000C4H    00000H
+                  @@CODE   MAX6675    000C4H    00000H
+                  @@CODE   KEY_SERVICE
+                                      000C4H    00000H
+                  @@CODE   BREWING    000C4H    00000H
+                  @@CODE   EEPROM     000C4H    00000H
+                  @@CODE   INIT_SETTINGS
+                                      000C4H    00000H
+                  @@CODE   WATER_LEVEL
+                                      000C4H    00000H
+                  @@CODE   HEATER     000C4H    00000H
+                  @@CODE   I2C        000C4H    00000H
+         ?CSEGSI                      000C4H    0000AH  CSEG
+         ?OCDSTAD                     000CEH    0000AH  CSEG
+         @@LCODE                      000D8H    0099FH  CSEG BASE
+                  @@LCODE  @cstart    000D8H    000ADH
+                  @@LCODE  m_fmul     00185H    0012BH
+                  @@LCODE  m_fdiv     002B0H    001B8H
+                  @@LCODE  @llsh      00468H    0001BH
+                  @@LCODE  @lursh     00483H    0001FH
+                  @@LCODE  @lbor      004A2H    00014H
+                  @@LCODE  m_fcom1    004B6H    000CFH
+                  @@LCODE  m_fcom5    00585H    0002AH
+                  @@LCODE  m_fcom6    005AFH    0001FH
+                  @@LCODE  m_fadd     005CEH    0013AH
+                  @@LCODE  m_fsub     00708H    00014H
+                  @@LCODE  m_ftols    0071CH    00078H
+                  @@LCODE  m_ftolu    00794H    0002BH
+                  @@LCODE  m_lstof    007BFH    00016H
+                  @@LCODE  m_lutof    007D5H    0004DH
+                  @@LCODE  m_fmulx    00822H    0013AH
+                  @@LCODE  m_fdivx    0095CH    0011BH
+         @@BASE                       00A77H    002B0H  CSEG BASE
+                  @@BASE   r_main     00A77H    00000H
+                  @@BASE   r_systeminit
+                                      00A77H    00000H
+                  @@BASE   r_cg_cgc   00A77H    00000H
+                  @@BASE   r_cg_cgc_user
+                                      00A77H    00000H
+                  @@BASE   r_cg_port
+                                      00A77H    00000H
+                  @@BASE   r_cg_port_user
+                                      00A77H    00000H
+                  @@BASE   r_cg_intc
+                                      00A77H    00000H
+                  @@BASE   r_cg_intc_user
+                                      00A77H    00048H
+                  @@BASE   r_cg_serial
+                                      00ABFH    00000H
+                  @@BASE   r_cg_serial_user
+                                      00ABFH    000BCH
+                  @@BASE   r_cg_adc   00B7BH    00000H
+                  @@BASE   r_cg_adc_user
+                                      00B7BH    0006BH
+                  @@BASE   r_cg_timer
+                                      00BE6H    00000H
+                  @@BASE   r_cg_timer_user
+                                      00BE6H    00141H
+                  @@BASE   INIT_MACHINE
+                                      00D27H    00000H
+                  @@BASE   PUMP_PWM   00D27H    00000H
+                  @@BASE   MAX6675    00D27H    00000H
+                  @@BASE   KEY_SERVICE
+                                      00D27H    00000H
+                  @@BASE   BREWING    00D27H    00000H
+                  @@BASE   EEPROM     00D27H    00000H
+                  @@BASE   INIT_SETTINGS
+                                      00D27H    00000H
+                  @@BASE   WATER_LEVEL
+                                      00D27H    00000H
+                  @@BASE   HEATER     00D27H    00000H
+                  @@BASE   I2C        00D27H    00000H
+* gap *                               00D27H    00001H
+         @@CNSTL                      00D28H    000CEH  CSEG PAGE64KP
+                  @@CNSTL  m_fcom5    00D28H    000CEH
+         @@CODEL                      00DF6H    00F51H  CSEG
+                  @@CODEL  r_main     00DF6H    000F9H
+                  @@CODEL  r_systeminit
+                                      00EEFH    0002BH
+                  @@CODEL  r_cg_cgc   00F1AH    00017H
+                  @@CODEL  r_cg_cgc_user
+                                      00F31H    00005H
+                  @@CODEL  r_cg_port
+                                      00F36H    00027H
+                  @@CODEL  r_cg_port_user
+                                      00F5DH    00000H
+                  @@CODEL  r_cg_intc
+                                      00F5DH    00056H
+                  @@CODEL  r_cg_intc_user
+                                      00FB3H    00000H
+                  @@CODEL  r_cg_serial
+                                      00FB3H    00138H
+                  @@CODEL  r_cg_serial_user
+                                      010EBH    0000AH
+                  @@CODEL  r_cg_adc   010F5H    0005DH
+                  @@CODEL  r_cg_adc_user
+                                      01152H    00000H
+                  @@CODEL  r_cg_timer
+                                      01152H    0008FH
+                  @@CODEL  r_cg_timer_user
+                                      011E1H    00000H
+                  @@CODEL  INIT_MACHINE
+                                      011E1H    00037H
+                  @@CODEL  PUMP_PWM   01218H    00042H
+                  @@CODEL  MAX6675    0125AH    000E7H
+                  @@CODEL  KEY_SERVICE
+                                      01341H    00092H
+                  @@CODEL  BREWING    013D3H    00158H
+                  @@CODEL  EEPROM     0152BH    00285H
+                  @@CODEL  INIT_SETTINGS
+                                      017B0H    0014FH
+                  @@CODEL  WATER_LEVEL
+                                      018FFH    000F5H
+                  @@CODEL  HEATER     019F4H    00085H
+                  @@CODEL  I2C        01A79H    002CEH
+         @@LCODEL                     01D47H    00238H  CSEG
+                  @@LCODEL @stkinit   01D47H    00044H
+                  @@LCODEL exit       01D8BH    0001CH
+                  @@LCODEL m_log      01DA7H    00011H
+                  @@LCODEL m_fcom4    01DB8H    00041H
+                  @@LCODEL m_flogx    01DF9H    000C5H
+                  @@LCODEL m_fsubx    01EBEH    00006H
+                  @@LCODEL m_fcom2    01EC4H    0003CH
+                  @@LCODEL m_fcom3    01F00H    0007FH
+* gap *                               01F7FH    00081H
+         @@CNST                       02000H    00168H  CSEG MIRRORP
+                  @@CNST   @cstart    02000H    00000H
+                  @@CNST   r_main     02000H    00000H
+                  @@CNST   r_systeminit
+                                      02000H    00000H
+                  @@CNST   r_cg_cgc   02000H    00000H
+                  @@CNST   r_cg_cgc_user
+                                      02000H    00000H
+                  @@CNST   r_cg_port
+                                      02000H    00000H
+                  @@CNST   r_cg_port_user
+                                      02000H    00000H
+                  @@CNST   r_cg_intc
+                                      02000H    00000H
+                  @@CNST   r_cg_intc_user
+                                      02000H    00000H
+                  @@CNST   r_cg_serial
+                                      02000H    00000H
+                  @@CNST   r_cg_serial_user
+                                      02000H    00000H
+                  @@CNST   r_cg_adc   02000H    00000H
+                  @@CNST   r_cg_adc_user
+                                      02000H    00000H
+                  @@CNST   r_cg_timer
+                                      02000H    00000H
+                  @@CNST   r_cg_timer_user
+                                      02000H    00000H
+                  @@CNST   INIT_MACHINE
+                                      02000H    00000H
+                  @@CNST   PUMP_PWM   02000H    00000H
+                  @@CNST   MAX6675    02000H    00000H
+                  @@CNST   KEY_SERVICE
+                                      02000H    00000H
+                  @@CNST   BREWING    02000H    00000H
+                  @@CNST   EEPROM     02000H    00000H
+                  @@CNST   INIT_SETTINGS
+                                      02000H    00168H
+                  @@CNST   WATER_LEVEL
+                                      02168H    00000H
+                  @@CNST   HEATER     02168H    00000H
+                  @@CNST   I2C        02168H    00000H
+* gap *                               02168H    0DC98H
+         ??OCDROM                     0FE00H    00200H  CSEG
+
+  MEMORY=RAM
+  BASE ADDRESS=FEF00H   SIZE=01100H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@DATA                       FEF00H    0024CH  DSEG BASEP
+                  @@DATA   @cstart    FEF00H    000BAH
+                  @@DATA   r_main     FEFBAH    00182H
+                  @@DATA   r_systeminit
+                                      FF13CH    00000H
+                  @@DATA   r_cg_cgc   FF13CH    00000H
+                  @@DATA   r_cg_cgc_user
+                                      FF13CH    00000H
+                  @@DATA   r_cg_port
+                                      FF13CH    00000H
+                  @@DATA   r_cg_port_user
+                                      FF13CH    00000H
+                  @@DATA   r_cg_intc
+                                      FF13CH    00000H
+                  @@DATA   r_cg_intc_user
+                                      FF13CH    00000H
+                  @@DATA   r_cg_serial
+                                      FF13CH    0000AH
+                  @@DATA   r_cg_serial_user
+                                      FF146H    00000H
+                  @@DATA   r_cg_adc   FF146H    00000H
+                  @@DATA   r_cg_adc_user
+                                      FF146H    00000H
+                  @@DATA   r_cg_timer
+                                      FF146H    00000H
+                  @@DATA   r_cg_timer_user
+                                      FF146H    00000H
+                  @@DATA   INIT_MACHINE
+                                      FF146H    00000H
+                  @@DATA   PUMP_PWM   FF146H    00000H
+                  @@DATA   MAX6675    FF146H    00000H
+                  @@DATA   KEY_SERVICE
+                                      FF146H    00000H
+                  @@DATA   BREWING    FF146H    00000H
+                  @@DATA   EEPROM     FF146H    00006H
+                  @@DATA   INIT_SETTINGS
+                                      FF14CH    00000H
+                  @@DATA   WATER_LEVEL
+                                      FF14CH    00000H
+                  @@DATA   HEATER     FF14CH    00000H
+                  @@DATA   I2C        FF14CH    00000H
+                  @@DATA   @rom       FF14CH    00000H
+         @@INIT                       FF14CH    00000H  DSEG BASEP
+                  @@INIT   @cstart    FF14CH    00000H
+                  @@INIT   r_main     FF14CH    00000H
+                  @@INIT   r_systeminit
+                                      FF14CH    00000H
+                  @@INIT   r_cg_cgc   FF14CH    00000H
+                  @@INIT   r_cg_cgc_user
+                                      FF14CH    00000H
+                  @@INIT   r_cg_port
+                                      FF14CH    00000H
+                  @@INIT   r_cg_port_user
+                                      FF14CH    00000H
+                  @@INIT   r_cg_intc
+                                      FF14CH    00000H
+                  @@INIT   r_cg_intc_user
+                                      FF14CH    00000H
+                  @@INIT   r_cg_serial
+                                      FF14CH    00000H
+                  @@INIT   r_cg_serial_user
+                                      FF14CH    00000H
+                  @@INIT   r_cg_adc   FF14CH    00000H
+                  @@INIT   r_cg_adc_user
+                                      FF14CH    00000H
+                  @@INIT   r_cg_timer
+                                      FF14CH    00000H
+                  @@INIT   r_cg_timer_user
+                                      FF14CH    00000H
+                  @@INIT   INIT_MACHINE
+                                      FF14CH    00000H
+                  @@INIT   PUMP_PWM   FF14CH    00000H
+                  @@INIT   MAX6675    FF14CH    00000H
+                  @@INIT   KEY_SERVICE
+                                      FF14CH    00000H
+                  @@INIT   BREWING    FF14CH    00000H
+                  @@INIT   EEPROM     FF14CH    00000H
+                  @@INIT   INIT_SETTINGS
+                                      FF14CH    00000H
+                  @@INIT   WATER_LEVEL
+                                      FF14CH    00000H
+                  @@INIT   HEATER     FF14CH    00000H
+                  @@INIT   I2C        FF14CH    00000H
+                  @@INIT   @rom       FF14CH    00000H
+         @@INIS                       FF14CH    00000H  DSEG UNITP
+                  @@INIS   @cstart    FF14CH    00000H
+                  @@INIS   r_main     FF14CH    00000H
+                  @@INIS   r_systeminit
+                                      FF14CH    00000H
+                  @@INIS   r_cg_cgc   FF14CH    00000H
+                  @@INIS   r_cg_cgc_user
+                                      FF14CH    00000H
+                  @@INIS   r_cg_port
+                                      FF14CH    00000H
+                  @@INIS   r_cg_port_user
+                                      FF14CH    00000H
+                  @@INIS   r_cg_intc
+                                      FF14CH    00000H
+                  @@INIS   r_cg_intc_user
+                                      FF14CH    00000H
+                  @@INIS   r_cg_serial
+                                      FF14CH    00000H
+                  @@INIS   r_cg_serial_user
+                                      FF14CH    00000H
+                  @@INIS   r_cg_adc   FF14CH    00000H
+                  @@INIS   r_cg_adc_user
+                                      FF14CH    00000H
+                  @@INIS   r_cg_timer
+                                      FF14CH    00000H
+                  @@INIS   r_cg_timer_user
+                                      FF14CH    00000H
+                  @@INIS   INIT_MACHINE
+                                      FF14CH    00000H
+                  @@INIS   PUMP_PWM   FF14CH    00000H
+                  @@INIS   MAX6675    FF14CH    00000H
+                  @@INIS   KEY_SERVICE
+                                      FF14CH    00000H
+                  @@INIS   BREWING    FF14CH    00000H
+                  @@INIS   EEPROM     FF14CH    00000H
+                  @@INIS   INIT_SETTINGS
+                                      FF14CH    00000H
+                  @@INIS   WATER_LEVEL
+                                      FF14CH    00000H
+                  @@INIS   HEATER     FF14CH    00000H
+                  @@INIS   I2C        FF14CH    00000H
+                  @@INIS   @rom       FF14CH    00000H
+         @@DATS                       FF14CH    00000H  DSEG UNITP
+                  @@DATS   @cstart    FF14CH    00000H
+                  @@DATS   r_main     FF14CH    00000H
+                  @@DATS   r_systeminit
+                                      FF14CH    00000H
+                  @@DATS   r_cg_cgc   FF14CH    00000H
+                  @@DATS   r_cg_cgc_user
+                                      FF14CH    00000H
+                  @@DATS   r_cg_port
+                                      FF14CH    00000H
+                  @@DATS   r_cg_port_user
+                                      FF14CH    00000H
+                  @@DATS   r_cg_intc
+                                      FF14CH    00000H
+                  @@DATS   r_cg_intc_user
+                                      FF14CH    00000H
+                  @@DATS   r_cg_serial
+                                      FF14CH    00000H
+                  @@DATS   r_cg_serial_user
+                                      FF14CH    00000H
+                  @@DATS   r_cg_adc   FF14CH    00000H
+                  @@DATS   r_cg_adc_user
+                                      FF14CH    00000H
+                  @@DATS   r_cg_timer
+                                      FF14CH    00000H
+                  @@DATS   r_cg_timer_user
+                                      FF14CH    00000H
+                  @@DATS   INIT_MACHINE
+                                      FF14CH    00000H
+                  @@DATS   PUMP_PWM   FF14CH    00000H
+                  @@DATS   MAX6675    FF14CH    00000H
+                  @@DATS   KEY_SERVICE
+                                      FF14CH    00000H
+                  @@DATS   BREWING    FF14CH    00000H
+                  @@DATS   EEPROM     FF14CH    00000H
+                  @@DATS   INIT_SETTINGS
+                                      FF14CH    00000H
+                  @@DATS   WATER_LEVEL
+                                      FF14CH    00000H
+                  @@DATS   HEATER     FF14CH    00000H
+                  @@DATS   I2C        FF14CH    00000H
+                  @@DATS   @rom       FF14CH    00000H
+         @@INITL                      FF14CH    00000H  DSEG UNIT64KP
+                  @@INITL  @cstart    FF14CH    00000H
+                  @@INITL  r_main     FF14CH    00000H
+                  @@INITL  r_systeminit
+                                      FF14CH    00000H
+                  @@INITL  r_cg_cgc   FF14CH    00000H
+                  @@INITL  r_cg_cgc_user
+                                      FF14CH    00000H
+                  @@INITL  r_cg_port
+                                      FF14CH    00000H
+                  @@INITL  r_cg_port_user
+                                      FF14CH    00000H
+                  @@INITL  r_cg_intc
+                                      FF14CH    00000H
+                  @@INITL  r_cg_intc_user
+                                      FF14CH    00000H
+                  @@INITL  r_cg_serial
+                                      FF14CH    00000H
+                  @@INITL  r_cg_serial_user
+                                      FF14CH    00000H
+                  @@INITL  r_cg_adc   FF14CH    00000H
+                  @@INITL  r_cg_adc_user
+                                      FF14CH    00000H
+                  @@INITL  r_cg_timer
+                                      FF14CH    00000H
+                  @@INITL  r_cg_timer_user
+                                      FF14CH    00000H
+                  @@INITL  INIT_MACHINE
+                                      FF14CH    00000H
+                  @@INITL  PUMP_PWM   FF14CH    00000H
+                  @@INITL  MAX6675    FF14CH    00000H
+                  @@INITL  KEY_SERVICE
+                                      FF14CH    00000H
+                  @@INITL  BREWING    FF14CH    00000H
+                  @@INITL  EEPROM     FF14CH    00000H
+                  @@INITL  INIT_SETTINGS
+                                      FF14CH    00000H
+                  @@INITL  WATER_LEVEL
+                                      FF14CH    00000H
+                  @@INITL  HEATER     FF14CH    00000H
+                  @@INITL  I2C        FF14CH    00000H
+                  @@INITL  @rom       FF14CH    00000H
+         @@DATAL                      FF14CH    00000H  DSEG UNIT64KP
+                  @@DATAL  @cstart    FF14CH    00000H
+                  @@DATAL  r_main     FF14CH    00000H
+                  @@DATAL  r_systeminit
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_cgc   FF14CH    00000H
+                  @@DATAL  r_cg_cgc_user
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_port
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_port_user
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_intc
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_intc_user
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_serial
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_serial_user
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_adc   FF14CH    00000H
+                  @@DATAL  r_cg_adc_user
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_timer
+                                      FF14CH    00000H
+                  @@DATAL  r_cg_timer_user
+                                      FF14CH    00000H
+                  @@DATAL  INIT_MACHINE
+                                      FF14CH    00000H
+                  @@DATAL  PUMP_PWM   FF14CH    00000H
+                  @@DATAL  MAX6675    FF14CH    00000H
+                  @@DATAL  KEY_SERVICE
+                                      FF14CH    00000H
+                  @@DATAL  BREWING    FF14CH    00000H
+                  @@DATAL  EEPROM     FF14CH    00000H
+                  @@DATAL  INIT_SETTINGS
+                                      FF14CH    00000H
+                  @@DATAL  WATER_LEVEL
+                                      FF14CH    00000H
+                  @@DATAL  HEATER     FF14CH    00000H
+                  @@DATAL  I2C        FF14CH    00000H
+                  @@DATAL  @rom       FF14CH    00000H
+* gap *                               FF14CH    00CD4H
+         @@BITS                       FFE20H    00006H  BSEG
+                  @@BITS   @cstart    FFE20H.0  00000H.0
+                  @@BITS   r_main     FFE20H.0  00004H.7
+                  @@BITS   r_systeminit
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_cgc   FFE24H.7  00000H.0
+                  @@BITS   r_cg_cgc_user
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_port
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_port_user
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_intc
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_intc_user
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_serial
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_serial_user
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_adc   FFE24H.7  00000H.0
+                  @@BITS   r_cg_adc_user
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_timer
+                                      FFE24H.7  00000H.0
+                  @@BITS   r_cg_timer_user
+                                      FFE24H.7  00000H.0
+                  @@BITS   INIT_MACHINE
+                                      FFE24H.7  00000H.0
+                  @@BITS   PUMP_PWM   FFE24H.7  00000H.0
+                  @@BITS   MAX6675    FFE24H.7  00000H.0
+                  @@BITS   KEY_SERVICE
+                                      FFE24H.7  00000H.0
+                  @@BITS   BREWING    FFE24H.7  00000H.0
+                  @@BITS   EEPROM     FFE24H.7  00000H.2
+                  @@BITS   INIT_SETTINGS
+                                      FFE25H.1  00000H.0
+                  @@BITS   WATER_LEVEL
+                                      FFE25H.1  00000H.0
+                  @@BITS   HEATER     FFE25H.1  00000H.0
+                  @@BITS   I2C        FFE25H.1  00000H.0
+* gap *                               FFE26H    000AEH
+         @@SEGREG                     FFED4H    00004H  DSEG AT
+                  @@SEGREG @SEGREG    FFED4H    00004H
+         @@RTARG0                     FFED8H    00008H  DSEG AT
+                  @@RTARG0 @RTARG0    FFED8H    00008H
+* gap *                               FFEE0H    00020H
+* gap (Not Free Area) *               FFF00H    00100H
+
+
+ Target chip : R5F100FE
+ Device file : V1.14
+

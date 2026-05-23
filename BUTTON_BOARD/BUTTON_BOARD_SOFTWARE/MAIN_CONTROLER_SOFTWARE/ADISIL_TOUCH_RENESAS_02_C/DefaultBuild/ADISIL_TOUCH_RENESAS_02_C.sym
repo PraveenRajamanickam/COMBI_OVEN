@@ -1,0 +1,353 @@
+#05
+;FF     PUBLIC
+02FFED8@@CPR1
+02FFEDE@@FPRF1
+02FFEDF@@FPRF2
+02FFEDE@@FPRFP
+02FFED8@@FPRS
+02FFEDC@@FPRXD
+02FFEDC@@FPRXP
+02FFEDD@@FPRXS
+01005CE@@fadd
+01005DD@@fadde
+01005DE@@faddx
+01002B0@@fdiv
+010095C@@fdivx
+0100562@@finfws
+0101EE4@@fldd2
+0101ED7@@flds1
+0101EEF@@flds2
+0101E9A@@fldsd
+0101EB0@@fldsk_f
+0101EC5@@fldsk_n
+0101DB2@@flogx
+0100585@@fmthrr
+0100185@@fmul
+0100822@@fmulx
+01004B6@@fnor
+0101E5E@@fply
+010052C@@fret
+010054A@@fret0
+010054D@@fret0s
+0100556@@fret0x
+0101D52@@frnd
+0101F0E@@fst1d
+01004EE@@fstore
+0101EA5@@fstrcp
+0100708@@fsub
+0101E58@@fsubx
+010071C@@ftols
+010072E@@ftolse
+0100794@@ftolu
+01004E1@@funite
+010055A@@fx0div
+0101EFC@@fxcd1
+0100546@@fxinex
+010057A@@fxnan1
+0100575@@fxnan2
+010055E@@fxover
+01004A2@@lsbor
+0100468@@lslsh
+01007BF@@lstof
+01004A2@@lubor
+0100468@@lulsh
+0100483@@lursh
+01007D5@@lutof
+01007DE@@lutofe
+02FF150_?DATA
+02FF150_?DATAL
+02FF150_?DATS
+02FF150_?INIS
+02FF150_?INIT
+02FF150_?INITL
+0100002_?RLINIT
+0100002_?R_INIS
+0100002_?R_INIT
+02FEF98_@BRKADR
+02FEF86_@DIVR
+02FEF80_@FNCENT
+02FEF00_@FNCTBL
+02FEF8A_@LDIVR
+0000000_@MAA
+02FEFBA_@MEMBTM
+02FEF9A_@MEMTOP
+02FFED8_@RTARG0
+02FFED9_@RTARG1
+02FFEDA_@RTARG2
+02FFEDB_@RTARG3
+02FFEDC_@RTARG4
+02FFEDD_@RTARG5
+02FFEDE_@RTARG6
+02FFEDF_@RTARG7
+01FFE20_@SADBEG
+00000C0_@SADSIZ
+02FEF82_@SEED
+02FFED4_@SEGAX
+02FFED5_@SEGBC
+02FFED6_@SEGDE
+02FFED7_@SEGHL
+00FFE20_@STBEG
+00FF150_@STEND
+02FEF92_@TOKPTR
+0100185_@cend
+01000D8_@cstart
+0100010_@vect10
+0100024_@vect24
+010002C_@vect2c
+0100034_@vect34
+02FEFDA_ACC
+02FEFDE_D_Setting
+0102000_D_Setting1
+010198E_Heater_control_fun
+010117B_INIT_MACHINE
+010174A_INIT_SETTING
+02FEFC0_M_crnt_temp
+02FF13A_PUMP_OFF_TIME
+02FF13B_PUMP_ON_TIME
+02FEFC8_R2
+010108F_R_ADC_Create
+01010E3_R_ADC_Get_Result
+01010DF_R_ADC_Set_OperationOff
+01010DB_R_ADC_Set_OperationOn
+01010C7_R_ADC_Start
+01010D1_R_ADC_Stop
+0100EC5_R_CGC_Create
+0100EDC_R_CGC_Get_ResetSource
+0100F3F_R_INTC4_Start
+0100F46_R_INTC4_Stop
+0100F0B_R_INTC_Create
+0100E87_R_MAIN_UserInit
+0100EE1_R_PORT_Create
+0100F4D_R_SAU0_Create
+0100E9A_R_Systeminit
+0101159_R_TAU0_Channel0_Start
+010116A_R_TAU0_Channel0_Stop
+01010EC_R_TAU0_Create
+0100F5F_R_UART1_Create
+010102B_R_UART1_Receive
+0101051_R_UART1_Send
+0100FDF_R_UART1_Start
+010100A_R_UART1_Stop
+02FF124__b_
+02FF128__v_
+0101A13_ack
+0300102_ack_received_flag
+02FF13E_ad_result1
+0300128_adc_reading_delay_flag
+02FF13D_adc_selector_count
+02FF14A_b
+02FF122_b_
+030011A_blink_flg
+0300119_brew_complete_flg
+02FF110_brewing_dec_on_time
+02FF114_brewing_err_counter
+0300117_brewing_err_counter_flg
+0300118_brewing_flowmeter_err_flg
+02FF10A_brewing_on_time
+02FF112_brwwing_gram
+02FF0EC_caliberatiom_nagative_sign_flag
+02FF0ED_calibration_temperature
+02FF11D_cb_100_cyl
+02FF11C_cb_150_cyl
+02FF11B_cb_200_cyl
+02FF11A_cb_250_cyl
+02FF119_cb_50_cyl
+0101899_check_and_water_fill
+02FEFBA_cleaning_feed_timer
+0101BE2_clock
+0300104_clock_low_flag
+030011D_cof_brew_delay_flg
+030011E_cof_brew_on_flg
+02FF117_cof_brew_remining_cly
+0300121_cof_brew_start_flg
+02FF118_cof_brewing_cycle
+02FF10E_cof_brewing_time
+030011C_cof_dec_flush_flg
+02FF104_cof_dec_on_time
+02FF100_cof_flow_plus
+02FF106_cof_interval_time
+0300120_coffee_brewing
+010136D_coffee_brewing_fun
+02FF0F4_confirm_key
+0300110_confirm_key_press_flg
+0101CAF_data_trans
+02FEFDC_disp_addr
+0101569_eeprom_read
+01015DE_eeprom_read_int
+010168D_eeprom_read_long_int
+030012A_eeprom_reed_ok
+0300100_eeprom_save_flg
+02FEFD8_eeprom_ten_msec_delay
+01014C5_eeprom_write
+01015AF_eeprom_write_int
+010160D_eeprom_write_long_int
+0300129_eeprom_write_ok
+02FF14E_eeprom_write_time_out
+02FEFCC_eeram_addr
+02FEFCD_eeram_temp_data
+02FF14C_ep
+0300105_err_led_blink_flg
+02FEF96_errno
+030010D_error_indicate_flg
+0101D25_exit
+02FF0FE_final_onesec_brew_pulse
+0300123_first_time_brewing_flg
+0101914_flow_meter_err_func
+0300127_flow_meter_pulse_flg
+02FF146_g_uart1_rx_count
+02FF148_g_uart1_rx_length
+02FF142_g_uart1_tx_count
+02FF144_gp_uart1_rx_address
+02FF140_gp_uart1_tx_address
+0300122_gram_change_flg
+02FF138_half_second_counter
+0100EBD_hdwinit
+02FF0EB_heater_on_delay
+030010C_heater_on_flg
+01011F4_hundK_temp_func
+02FF130_hundred_msec_counter
+02FF134_hundred_usec_counter
+0101BF6_iic_delay
+030010F_inite_machine_flg
+02FF0F0_initial_delay_timer
+02FF10C_interval_time
+030011F_intial_cof_brew_flg
+030010E_intial_heating_flg
+02FF0F1_key_press_delay
+0300114_key_pressed_conform_flag
+01012DB_key_scan
+02FF0F6_key_scan_data
+02FF0F5_key_scan_delay
+0300115_key_scan_delay_flag
+0101348_key_service
+02FF0F9_key_status
+0300116_key_status_changed_flag
+0101D41_log
+02FEFC4_logR2
+0101D41_logf
+02FF0E3_lower_flowmeter_counter
+0300108_lower_flowmeter_error_flg
+0100E50_main
+02FF0E5_main_refill_off_time
+02FF0E4_main_refill_on_time
+0300109_main_refilling_start_flg
+02FF0EE_main_reset_temp
+02FF0EF_main_set_temp
+01005AF_matherr
+02FF11E_max1_temperature
+02FF120_max2_temperature
+02FF0E6_minimum_5ml_counter
+0300111_new_key_flg
+02FF12C_one_minite_counter
+02FF132_one_msec_counter
+02FF12A_one_msec_wait_delay
+02FF0FC_one_sec_brew_pulse
+0300124_one_sec_temperature_delay_flg
+02FF12E_one_second_counter
+02FF0F3_press_key
+02FF115_pump_on_pluse
+02FF13C_pump_pulse
+0300126_pump_pulse_on_flg
+0300125_pump_pwm_flg
+01011B2_pump_pwm_fn
+030011B_pump_start_flg
+02FEFD4_ram_addr
+0101B29_read_iic
+0101C0D_rec_data
+02FEFD2_receive_bit_counter
+02FEFCE_received_data
+0300101_relay_flg
+02FF108_save_cof_cups
+0300103_sda_status_flag
+0101C69_send_ack
+02FF0E8_silicon_heater_off_delay
+02FF0E9_silicon_heater_on_delay
+030010A_silicon_heater_on_flg
+0300112_speed1_inc_dec_flag
+0300113_speed2_inc_dec_flag
+02FF0FA_speed_inc_dec
+0101A58_start_iic
+0101CE1_stkinit
+0101A79_stop
+02FEFC2_tCelsius
+02FF0F2_temp_key
+02FF0F7_temp_key_scan_data
+02FF0F8_temp_key_status
+02FEFCF_temp_pr
+02FF0EA_temper_err_count
+030010B_temperature_err_flg
+02FF136_ten_msec_counter
+02FEFD6_tmp_var
+02FEFBE_top_max_temperature
+02FF116_total_cb_cyl
+02FEFBB_touch_interval_timer
+02FEFBC_touch_press_counter
+02FF0E2_upper_flowmeter_counter
+0300107_upper_flowmeter_error_flg
+0300106_upper_flowmeter_flg
+02FF126_v_
+02FF102_water_on_time
+0101A9A_write_iic
+;FF     @cstart
+;FF     r_main
+;FF     r_systeminit
+;FF     r_cg_cgc
+;FF     r_cg_cgc_user
+;FF     r_cg_port
+;FF     r_cg_port_user
+;FF     r_cg_intc
+;FF     r_cg_intc_user
+<0100A77_r_intc4_interrupt
+;FF     r_cg_serial
+;FF     r_cg_serial_user
+<010108B_r_uart1_callback_error
+0101085_r_uart1_callback_receiveend
+010108A_r_uart1_callback_sendend
+0101086_r_uart1_callback_softwareoverrun
+0100AA3_r_uart1_interrupt_receive
+0100B1B_r_uart1_interrupt_send
+;FF     r_cg_adc
+;FF     r_cg_adc_user
+<0100B5F_r_adc_interrupt
+;FF     r_cg_timer
+;FF     r_cg_timer_user
+<0100BCA_r_tau0_channel0_interrupt
+;FF     INIT_MACHINE
+;FF     PUMP_PWM
+;FF     MAX6675
+;FF     KEY_SERVICE
+;FF     BREWING
+;FF     EEPROM
+;FF     INIT_SETTINGS
+;FF     WATER_LEVEL
+;FF     HEATER
+;FF     I2C
+;FF     m_fmul
+;FF     m_fdiv
+;FF     @llsh
+;FF     @lursh
+;FF     @lbor
+;FF     @SEGREG
+;FF     @stkinit
+;FF     @RTARG0
+;FF     exit
+;FF     m_fcom1
+;FF     m_fcom5
+;FF     m_fcom6
+;FF     m_fadd
+;FF     m_fsub
+;FF     m_ftols
+;FF     m_ftolu
+;FF     m_lstof
+;FF     m_lutof
+;FF     m_log
+;FF     m_fcom4
+;FF     m_flogx
+;FF     m_fmulx
+;FF     m_fsubx
+;FF     m_fdivx
+;FF     m_fcom2
+;FF     m_fcom3
+;FF     @rom
+=
+

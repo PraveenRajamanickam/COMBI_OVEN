@@ -1,0 +1,695 @@
+
+
+
+78K0R Linker W1.80                            Date:12 Nov 2024 Page:   1
+
+Command:   -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\
+           RL78\Devicefile -_msgoff -oDefaultBuild\STEAMER_BREWER.lmf -g
+           i00000000000000000000h -go84h,0FE00h,512 -gb0EFF3E9H -mi0 -s 
+           -pDefaultBuild\STEAMER_BREWER.map C:\Program Files (x86)\Rene
+           sas Electronics\CS+\CACX\CA78K0R\V1.72\lib78k0r\s0rll.rel Def
+           aultBuild\r_main.rel DefaultBuild\r_systeminit.rel DefaultBui
+           ld\r_cg_cgc.rel DefaultBuild\r_cg_cgc_user.rel DefaultBuild\r
+           _cg_port.rel DefaultBuild\r_cg_port_user.rel DefaultBuild\r_c
+           g_intc.rel DefaultBuild\r_cg_intc_user.rel DefaultBuild\r_cg_
+           serial.rel DefaultBuild\r_cg_serial_user.rel DefaultBuild\r_c
+           g_adc.rel DefaultBuild\r_cg_adc_user.rel DefaultBuild\r_cg_ti
+           mer.rel DefaultBuild\r_cg_timer_user.rel DefaultBuild\BLUETOO
+           TH_UART.rel DefaultBuild\INIT_MACHINE.rel DefaultBuild\PUMP_P
+           WM.rel DefaultBuild\STEAM_FUNCTION.rel DefaultBuild\MAX6675.r
+           el -bcl0ram.lib -bcl0rm.lib -bcl0rmf.lib -iC:\Program Files (
+           x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\lib78k0r
+Para-file:
+Out-file:  DefaultBuild\STEAMER_BREWER.lmf
+Map-file:  DefaultBuild\STEAMER_BREWER.map
+Direc-file:
+Directive:
+
+
+*** Link information ***
+
+    52 output segment(s)
+ 1120H byte(s) real data
+  1151 symbol(s) defined
+
+
+*** Memory map ***
+
+
+  SPACE=REGULAR
+
+  MEMORY=ROM
+  BASE ADDRESS=00000H   SIZE=10000H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@VECT00                     00000H    00002H  CSEG AT
+                  @@VECT00 @cstart    00000H    00002H
+         @@CNST                       00002H    00000H  CSEG UNITP
+                  @@CNST   @cstart    00002H    00000H
+                  @@CNST   r_main     00002H    00000H
+                  @@CNST   r_systeminit
+                                      00002H    00000H
+                  @@CNST   r_cg_cgc   00002H    00000H
+                  @@CNST   r_cg_cgc_user
+                                      00002H    00000H
+                  @@CNST   r_cg_port
+                                      00002H    00000H
+                  @@CNST   r_cg_port_user
+                                      00002H    00000H
+                  @@CNST   r_cg_intc
+                                      00002H    00000H
+                  @@CNST   r_cg_intc_user
+                                      00002H    00000H
+                  @@CNST   r_cg_serial
+                                      00002H    00000H
+                  @@CNST   r_cg_serial_user
+                                      00002H    00000H
+                  @@CNST   r_cg_adc   00002H    00000H
+                  @@CNST   r_cg_adc_user
+                                      00002H    00000H
+                  @@CNST   r_cg_timer
+                                      00002H    00000H
+                  @@CNST   r_cg_timer_user
+                                      00002H    00000H
+                  @@CNST   BLUETOOTH_UART
+                                      00002H    00000H
+                  @@CNST   INIT_MACHINE
+                                      00002H    00000H
+                  @@CNST   PUMP_PWM   00002H    00000H
+                  @@CNST   STEAM_FUNCTION
+                                      00002H    00000H
+                  @@CNST   MAX6675    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  @cstart    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_main     00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_systeminit
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_port
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_port_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_intc
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_intc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_serial
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_serial_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_adc   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_adc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_timer
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_timer_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  BLUETOOTH_UART
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  INIT_MACHINE
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  PUMP_PWM   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  STEAM_FUNCTION
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  MAX6675    00002H    00000H
+         @@R_INIT                     00002H    00000H  CSEG UNIT64KP
+                  @@R_INIT @cstart    00002H    00000H
+                  @@R_INIT r_main     00002H    00000H
+                  @@R_INIT r_systeminit
+                                      00002H    00000H
+                  @@R_INIT r_cg_cgc   00002H    00000H
+                  @@R_INIT r_cg_cgc_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_port
+                                      00002H    00000H
+                  @@R_INIT r_cg_port_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_intc
+                                      00002H    00000H
+                  @@R_INIT r_cg_intc_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_serial
+                                      00002H    00000H
+                  @@R_INIT r_cg_serial_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_adc   00002H    00000H
+                  @@R_INIT r_cg_adc_user
+                                      00002H    00000H
+                  @@R_INIT r_cg_timer
+                                      00002H    00000H
+                  @@R_INIT r_cg_timer_user
+                                      00002H    00000H
+                  @@R_INIT BLUETOOTH_UART
+                                      00002H    00000H
+                  @@R_INIT INIT_MACHINE
+                                      00002H    00000H
+                  @@R_INIT PUMP_PWM   00002H    00000H
+                  @@R_INIT STEAM_FUNCTION
+                                      00002H    00000H
+                  @@R_INIT MAX6675    00002H    00000H
+                  @@R_INIT @rom       00002H    00000H
+         @@RLINIT                     00002H    00000H  CSEG UNIT64KP
+                  @@RLINIT @cstart    00002H    00000H
+                  @@RLINIT r_main     00002H    00000H
+                  @@RLINIT r_systeminit
+                                      00002H    00000H
+                  @@RLINIT r_cg_cgc   00002H    00000H
+                  @@RLINIT r_cg_cgc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_port
+                                      00002H    00000H
+                  @@RLINIT r_cg_port_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_intc
+                                      00002H    00000H
+                  @@RLINIT r_cg_intc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_serial
+                                      00002H    00000H
+                  @@RLINIT r_cg_serial_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_adc   00002H    00000H
+                  @@RLINIT r_cg_adc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_timer
+                                      00002H    00000H
+                  @@RLINIT r_cg_timer_user
+                                      00002H    00000H
+                  @@RLINIT BLUETOOTH_UART
+                                      00002H    00000H
+                  @@RLINIT INIT_MACHINE
+                                      00002H    00000H
+                  @@RLINIT PUMP_PWM   00002H    00000H
+                  @@RLINIT STEAM_FUNCTION
+                                      00002H    00000H
+                  @@RLINIT MAX6675    00002H    00000H
+                  @@RLINIT @rom       00002H    00000H
+         @@R_INIS                     00002H    00000H  CSEG UNIT64KP
+                  @@R_INIS @cstart    00002H    00000H
+                  @@R_INIS r_main     00002H    00000H
+                  @@R_INIS r_systeminit
+                                      00002H    00000H
+                  @@R_INIS r_cg_cgc   00002H    00000H
+                  @@R_INIS r_cg_cgc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_port
+                                      00002H    00000H
+                  @@R_INIS r_cg_port_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_intc
+                                      00002H    00000H
+                  @@R_INIS r_cg_intc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_serial
+                                      00002H    00000H
+                  @@R_INIS r_cg_serial_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_adc   00002H    00000H
+                  @@R_INIS r_cg_adc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_timer
+                                      00002H    00000H
+                  @@R_INIS r_cg_timer_user
+                                      00002H    00000H
+                  @@R_INIS BLUETOOTH_UART
+                                      00002H    00000H
+                  @@R_INIS INIT_MACHINE
+                                      00002H    00000H
+                  @@R_INIS PUMP_PWM   00002H    00000H
+                  @@R_INIS STEAM_FUNCTION
+                                      00002H    00000H
+                  @@R_INIS MAX6675    00002H    00000H
+                  @@R_INIS @rom       00002H    00000H
+         @@CALT                       00002H    00000H  CSEG
+                  @@CALT   @cstart    00002H    00000H
+                  @@CALT   r_main     00002H    00000H
+                  @@CALT   r_systeminit
+                                      00002H    00000H
+                  @@CALT   r_cg_cgc   00002H    00000H
+                  @@CALT   r_cg_cgc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_port
+                                      00002H    00000H
+                  @@CALT   r_cg_port_user
+                                      00002H    00000H
+                  @@CALT   r_cg_intc
+                                      00002H    00000H
+                  @@CALT   r_cg_intc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_serial
+                                      00002H    00000H
+                  @@CALT   r_cg_serial_user
+                                      00002H    00000H
+                  @@CALT   r_cg_adc   00002H    00000H
+                  @@CALT   r_cg_adc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_timer
+                                      00002H    00000H
+                  @@CALT   r_cg_timer_user
+                                      00002H    00000H
+                  @@CALT   BLUETOOTH_UART
+                                      00002H    00000H
+                  @@CALT   INIT_MACHINE
+                                      00002H    00000H
+                  @@CALT   PUMP_PWM   00002H    00000H
+                  @@CALT   STEAM_FUNCTION
+                                      00002H    00000H
+                  @@CALT   MAX6675    00002H    00000H
+         ??NMIROM                     00002H    00002H  CSEG
+* gap *                               00004H    00004H
+         @@VECT08                     00008H    00002H  CSEG AT
+                  @@VECT08 r_cg_intc_user
+                                      00008H    00002H
+* gap *                               0000AH    00006H
+         @@VECT10                     00010H    00002H  CSEG AT
+                  @@VECT10 r_cg_intc_user
+                                      00010H    00002H
+* gap *                               00012H    00012H
+         @@VECT24                     00024H    00002H  CSEG AT
+                  @@VECT24 r_cg_serial_user
+                                      00024H    00002H
+         @@VECT26                     00026H    00002H  CSEG AT
+                  @@VECT26 BLUETOOTH_UART
+                                      00026H    00002H
+* gap *                               00028H    00004H
+         @@VECT2C                     0002CH    00002H  CSEG AT
+                  @@VECT2C r_cg_timer_user
+                                      0002CH    00002H
+* gap *                               0002EH    00006H
+         @@VECT34                     00034H    00002H  CSEG AT
+                  @@VECT34 r_cg_adc_user
+                                      00034H    00002H
+* gap *                               00036H    0008AH
+         ?CSEGOB0                     000C0H    00004H  CSEG OPT_BYTE
+         @@CODE                       000C4H    00000H  CSEG BASE
+                  @@CODE   r_main     000C4H    00000H
+                  @@CODE   r_systeminit
+                                      000C4H    00000H
+                  @@CODE   r_cg_cgc   000C4H    00000H
+                  @@CODE   r_cg_cgc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_port
+                                      000C4H    00000H
+                  @@CODE   r_cg_port_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_intc
+                                      000C4H    00000H
+                  @@CODE   r_cg_intc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_serial
+                                      000C4H    00000H
+                  @@CODE   r_cg_serial_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_adc   000C4H    00000H
+                  @@CODE   r_cg_adc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_timer
+                                      000C4H    00000H
+                  @@CODE   r_cg_timer_user
+                                      000C4H    00000H
+                  @@CODE   BLUETOOTH_UART
+                                      000C4H    00000H
+                  @@CODE   INIT_MACHINE
+                                      000C4H    00000H
+                  @@CODE   PUMP_PWM   000C4H    00000H
+                  @@CODE   STEAM_FUNCTION
+                                      000C4H    00000H
+                  @@CODE   MAX6675    000C4H    00000H
+         ?CSEGSI                      000C4H    0000AH  CSEG
+         ?OCDSTAD                     000CEH    0000AH  CSEG
+         @@LCODE                      000D8H    003F6H  CSEG BASE
+                  @@LCODE  @cstart    000D8H    000ADH
+                  @@LCODE  m_fmul     00185H    0012BH
+                  @@LCODE  m_fcom1    002B0H    000CFH
+                  @@LCODE  m_fcom5    0037FH    0002AH
+                  @@LCODE  m_fcom6    003A9H    0001FH
+                  @@LCODE  m_ftols    003C8H    00078H
+                  @@LCODE  m_ftolu    00440H    0002BH
+                  @@LCODE  m_lstof    0046BH    00016H
+                  @@LCODE  m_lutof    00481H    0004DH
+         @@BASE                       004CEH    003F7H  CSEG BASE
+                  @@BASE   r_main     004CEH    00000H
+                  @@BASE   r_systeminit
+                                      004CEH    00000H
+                  @@BASE   r_cg_cgc   004CEH    00000H
+                  @@BASE   r_cg_cgc_user
+                                      004CEH    00000H
+                  @@BASE   r_cg_port
+                                      004CEH    00000H
+                  @@BASE   r_cg_port_user
+                                      004CEH    00000H
+                  @@BASE   r_cg_intc
+                                      004CEH    00000H
+                  @@BASE   r_cg_intc_user
+                                      004CEH    00007H
+                  @@BASE   r_cg_serial
+                                      004D5H    00000H
+                  @@BASE   r_cg_serial_user
+                                      004D5H    000BCH
+                  @@BASE   r_cg_adc   00591H    00000H
+                  @@BASE   r_cg_adc_user
+                                      00591H    00002H
+                  @@BASE   r_cg_timer
+                                      00593H    00000H
+                  @@BASE   r_cg_timer_user
+                                      00593H    0017EH
+                  @@BASE   BLUETOOTH_UART
+                                      00711H    001B4H
+                  @@BASE   INIT_MACHINE
+                                      008C5H    00000H
+                  @@BASE   PUMP_PWM   008C5H    00000H
+                  @@BASE   STEAM_FUNCTION
+                                      008C5H    00000H
+                  @@BASE   MAX6675    008C5H    00000H
+* gap *                               008C5H    00001H
+         @@CNSTL                      008C6H    000CEH  CSEG PAGE64KP
+                  @@CNSTL  m_fcom5    008C6H    000CEH
+         @@CODEL                      00994H    005DDH  CSEG
+                  @@CODEL  r_main     00994H    00048H
+                  @@CODEL  r_systeminit
+                                      009DCH    0002BH
+                  @@CODEL  r_cg_cgc   00A07H    00017H
+                  @@CODEL  r_cg_cgc_user
+                                      00A1EH    00005H
+                  @@CODEL  r_cg_port
+                                      00A23H    0001EH
+                  @@CODEL  r_cg_port_user
+                                      00A41H    00000H
+                  @@CODEL  r_cg_intc
+                                      00A41H    00056H
+                  @@CODEL  r_cg_intc_user
+                                      00A97H    00000H
+                  @@CODEL  r_cg_serial
+                                      00A97H    00138H
+                  @@CODEL  r_cg_serial_user
+                                      00BCFH    0000AH
+                  @@CODEL  r_cg_adc   00BD9H    00068H
+                  @@CODEL  r_cg_adc_user
+                                      00C41H    00000H
+                  @@CODEL  r_cg_timer
+                                      00C41H    0008FH
+                  @@CODEL  r_cg_timer_user
+                                      00CD0H    00000H
+                  @@CODEL  BLUETOOTH_UART
+                                      00CD0H    0001DH
+                  @@CODEL  INIT_MACHINE
+                                      00CEDH    0003EH
+                  @@CODEL  PUMP_PWM   00D2BH    00043H
+                  @@CODEL  STEAM_FUNCTION
+                                      00D6EH    000A4H
+                  @@CODEL  MAX6675    00E12H    0015FH
+         @@LCODEL                     00F71H    00060H  CSEG
+                  @@LCODEL @stkinit   00F71H    00044H
+                  @@LCODEL exit       00FB5H    0001CH
+* gap *                               00FD1H    0EE2FH
+         ??OCDROM                     0FE00H    00200H  CSEG
+
+  MEMORY=RAM
+  BASE ADDRESS=FEF00H   SIZE=01100H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@DATA                       FEF00H    000FEH  DSEG BASEP
+                  @@DATA   @cstart    FEF00H    000BAH
+                  @@DATA   r_main     FEFBAH    0003AH
+                  @@DATA   r_systeminit
+                                      FEFF4H    00000H
+                  @@DATA   r_cg_cgc   FEFF4H    00000H
+                  @@DATA   r_cg_cgc_user
+                                      FEFF4H    00000H
+                  @@DATA   r_cg_port
+                                      FEFF4H    00000H
+                  @@DATA   r_cg_port_user
+                                      FEFF4H    00000H
+                  @@DATA   r_cg_intc
+                                      FEFF4H    00000H
+                  @@DATA   r_cg_intc_user
+                                      FEFF4H    00000H
+                  @@DATA   r_cg_serial
+                                      FEFF4H    0000AH
+                  @@DATA   r_cg_serial_user
+                                      FEFFEH    00000H
+                  @@DATA   r_cg_adc   FEFFEH    00000H
+                  @@DATA   r_cg_adc_user
+                                      FEFFEH    00000H
+                  @@DATA   r_cg_timer
+                                      FEFFEH    00000H
+                  @@DATA   r_cg_timer_user
+                                      FEFFEH    00000H
+                  @@DATA   BLUETOOTH_UART
+                                      FEFFEH    00000H
+                  @@DATA   INIT_MACHINE
+                                      FEFFEH    00000H
+                  @@DATA   PUMP_PWM   FEFFEH    00000H
+                  @@DATA   STEAM_FUNCTION
+                                      FEFFEH    00000H
+                  @@DATA   MAX6675    FEFFEH    00000H
+                  @@DATA   @rom       FEFFEH    00000H
+         @@INIT                       FEFFEH    00000H  DSEG BASEP
+                  @@INIT   @cstart    FEFFEH    00000H
+                  @@INIT   r_main     FEFFEH    00000H
+                  @@INIT   r_systeminit
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_cgc   FEFFEH    00000H
+                  @@INIT   r_cg_cgc_user
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_port
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_port_user
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_intc
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_intc_user
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_serial
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_serial_user
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_adc   FEFFEH    00000H
+                  @@INIT   r_cg_adc_user
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_timer
+                                      FEFFEH    00000H
+                  @@INIT   r_cg_timer_user
+                                      FEFFEH    00000H
+                  @@INIT   BLUETOOTH_UART
+                                      FEFFEH    00000H
+                  @@INIT   INIT_MACHINE
+                                      FEFFEH    00000H
+                  @@INIT   PUMP_PWM   FEFFEH    00000H
+                  @@INIT   STEAM_FUNCTION
+                                      FEFFEH    00000H
+                  @@INIT   MAX6675    FEFFEH    00000H
+                  @@INIT   @rom       FEFFEH    00000H
+         @@INIS                       FEFFEH    00000H  DSEG UNITP
+                  @@INIS   @cstart    FEFFEH    00000H
+                  @@INIS   r_main     FEFFEH    00000H
+                  @@INIS   r_systeminit
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_cgc   FEFFEH    00000H
+                  @@INIS   r_cg_cgc_user
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_port
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_port_user
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_intc
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_intc_user
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_serial
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_serial_user
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_adc   FEFFEH    00000H
+                  @@INIS   r_cg_adc_user
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_timer
+                                      FEFFEH    00000H
+                  @@INIS   r_cg_timer_user
+                                      FEFFEH    00000H
+                  @@INIS   BLUETOOTH_UART
+                                      FEFFEH    00000H
+                  @@INIS   INIT_MACHINE
+                                      FEFFEH    00000H
+                  @@INIS   PUMP_PWM   FEFFEH    00000H
+                  @@INIS   STEAM_FUNCTION
+                                      FEFFEH    00000H
+                  @@INIS   MAX6675    FEFFEH    00000H
+                  @@INIS   @rom       FEFFEH    00000H
+         @@DATS                       FEFFEH    00000H  DSEG UNITP
+                  @@DATS   @cstart    FEFFEH    00000H
+                  @@DATS   r_main     FEFFEH    00000H
+                  @@DATS   r_systeminit
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_cgc   FEFFEH    00000H
+                  @@DATS   r_cg_cgc_user
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_port
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_port_user
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_intc
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_intc_user
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_serial
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_serial_user
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_adc   FEFFEH    00000H
+                  @@DATS   r_cg_adc_user
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_timer
+                                      FEFFEH    00000H
+                  @@DATS   r_cg_timer_user
+                                      FEFFEH    00000H
+                  @@DATS   BLUETOOTH_UART
+                                      FEFFEH    00000H
+                  @@DATS   INIT_MACHINE
+                                      FEFFEH    00000H
+                  @@DATS   PUMP_PWM   FEFFEH    00000H
+                  @@DATS   STEAM_FUNCTION
+                                      FEFFEH    00000H
+                  @@DATS   MAX6675    FEFFEH    00000H
+                  @@DATS   @rom       FEFFEH    00000H
+         @@INITL                      FEFFEH    00000H  DSEG UNIT64KP
+                  @@INITL  @cstart    FEFFEH    00000H
+                  @@INITL  r_main     FEFFEH    00000H
+                  @@INITL  r_systeminit
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_cgc   FEFFEH    00000H
+                  @@INITL  r_cg_cgc_user
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_port
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_port_user
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_intc
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_intc_user
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_serial
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_serial_user
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_adc   FEFFEH    00000H
+                  @@INITL  r_cg_adc_user
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_timer
+                                      FEFFEH    00000H
+                  @@INITL  r_cg_timer_user
+                                      FEFFEH    00000H
+                  @@INITL  BLUETOOTH_UART
+                                      FEFFEH    00000H
+                  @@INITL  INIT_MACHINE
+                                      FEFFEH    00000H
+                  @@INITL  PUMP_PWM   FEFFEH    00000H
+                  @@INITL  STEAM_FUNCTION
+                                      FEFFEH    00000H
+                  @@INITL  MAX6675    FEFFEH    00000H
+                  @@INITL  @rom       FEFFEH    00000H
+         @@DATAL                      FEFFEH    00000H  DSEG UNIT64KP
+                  @@DATAL  @cstart    FEFFEH    00000H
+                  @@DATAL  r_main     FEFFEH    00000H
+                  @@DATAL  r_systeminit
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_cgc   FEFFEH    00000H
+                  @@DATAL  r_cg_cgc_user
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_port
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_port_user
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_intc
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_intc_user
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_serial
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_serial_user
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_adc   FEFFEH    00000H
+                  @@DATAL  r_cg_adc_user
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_timer
+                                      FEFFEH    00000H
+                  @@DATAL  r_cg_timer_user
+                                      FEFFEH    00000H
+                  @@DATAL  BLUETOOTH_UART
+                                      FEFFEH    00000H
+                  @@DATAL  INIT_MACHINE
+                                      FEFFEH    00000H
+                  @@DATAL  PUMP_PWM   FEFFEH    00000H
+                  @@DATAL  STEAM_FUNCTION
+                                      FEFFEH    00000H
+                  @@DATAL  MAX6675    FEFFEH    00000H
+                  @@DATAL  @rom       FEFFEH    00000H
+* gap *                               FEFFEH    00E22H
+         @@BITS                       FFE20H    00002H  BSEG
+                  @@BITS   @cstart    FFE20H.0  00000H.0
+                  @@BITS   r_main     FFE20H.0  00001H.6
+                  @@BITS   r_systeminit
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_cgc   FFE21H.6  00000H.0
+                  @@BITS   r_cg_cgc_user
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_port
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_port_user
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_intc
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_intc_user
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_serial
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_serial_user
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_adc   FFE21H.6  00000H.0
+                  @@BITS   r_cg_adc_user
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_timer
+                                      FFE21H.6  00000H.0
+                  @@BITS   r_cg_timer_user
+                                      FFE21H.6  00000H.0
+                  @@BITS   BLUETOOTH_UART
+                                      FFE21H.6  00000H.0
+                  @@BITS   INIT_MACHINE
+                                      FFE21H.6  00000H.0
+                  @@BITS   PUMP_PWM   FFE21H.6  00000H.0
+                  @@BITS   STEAM_FUNCTION
+                                      FFE21H.6  00000H.0
+                  @@BITS   MAX6675    FFE21H.6  00000H.0
+* gap *                               FFE22H    000B2H
+         @@SEGREG                     FFED4H    00004H  DSEG AT
+                  @@SEGREG @SEGREG    FFED4H    00004H
+         @@RTARG0                     FFED8H    00008H  DSEG AT
+                  @@RTARG0 @RTARG0    FFED8H    00008H
+* gap *                               FFEE0H    00020H
+* gap (Not Free Area) *               FFF00H    00100H
+
+
+ Target chip : R5F100FE
+ Device file : V1.14
+
